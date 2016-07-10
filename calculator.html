@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function clearbtn(){
+        document.container.screen.value = "";
+      }
+      function divbtn(){
+        document.container.screen.value += "/";
+      }
+      function plusbtn(){
+        document.container.screen.value += "+";
+      }
+      function minusbtn(){
+        document.container.screen.value += "-";
+      }
+      function multbtn(){
+        document.container.screen.value += "*";
+      }
+      function dotbtn(){
+        document.container.screen.value += ".";
+      }
+    </script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Zaks0n Calculator</title>
+  </head>
+  <body>
+    <form name="container" id= "container">
+    <!--  <p style="text-align:center; color:white; font-family:arial">Zakson Calc</p> -->
+      <input type="text" name="screen" id="display"  ></input>
+      <input  type="button" name="clear" id="clear" value="CLR" onClick="clearbtn()"></input>
+      <input type="button" name="backslash" id="delete" value="DEL" onClick=></input>
+      <input type="button" name="divide" id="div" value="/" onClick="divbtn ()"></input>
+      <input type="button" name="times" id="mult" value="*" onClick="document.container.screen.value +='*'"></input>
+      <input type="button" name="btnsvn" id="seven" value="7" onClick="document.container.screen.value +='7'"></input>
+      <input type="button" name="btneig" id="eight" value="8" onClick="document.container.screen.value +='8'"></input>
+      <input type="button" name="btnnin" id="nine" value="9" onClick="document.container.screen.value +='9'"></input>
+      <input type="button" name="sub" id="minus" value="-" onClick="minusbtn()"></input>
+      <input type="button" name="btnfo" id="four" value="4" onClick="document.container.screen.value +='4'"></input>
+      <input type="button" name="btnfiv" id="five" value="5" onClick="document.container.screen.value +='5'"></input>
+      <input type="button" name="btnsix" id="six" value="6" onClick="document.container.screen.value +='6'"></input>
+      <input type="button" name="add" id="plus" value="+" onClick="plusbtn()"></input>
+      <input type="button" name="btnon" id="one" value="1" onClick="document.container.screen.value +='1'"></input>
+      <input type="button" name="btntwo" id="two" value=2 onClick="document.container.screen.value +='2'"></input>
+      <input type="button" name="btntre" id="three" value=3 onClick="document.container.screen.value +='3'" />
+      <input type="button" name="btnz" id="zero" value=0 onClick="document.container.screen.value +='0'" />
+      <input type="button" name="period" id="dot" value="." onClick="dotbtn()"></input>
+      <input type="button" name="answer" id="equals" value="=" onClick="document.container.screen.value = eval(document.container.screen.value)"></input>
+    </form>
+
+  </body>
+</html>

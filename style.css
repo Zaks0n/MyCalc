@@ -1,0 +1,51 @@
+body{
+  margin: 150px;
+}
+  #container {
+    height: 350px;
+    width: 250px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 2px;
+    position: relative;
+    background: green;
+    border-radius: 45px;
+    box-shadow: 5px 5px 5px black;
+}
+#display {
+  height: 35px;
+  width: 200px;
+  border: 1px solid black;
+  background: grey;
+  padding: 3px;
+  border-radius: 45px;
+  margin: 10px 17px;
+  font-size:35px;
+  text-align: right;
+}
+#plus {
+  height:150px;
+  position:relative;
+
+}
+input[type="button"]{
+  height: 50px;
+  width: 50px;
+  font-size: 22px;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 20px;
+  font-family: monospace;
+  box-shadow:  8px 10px 10px #000000;
+}
+input[type="button"]:active{
+  background: grey;
+}
+#seven, #four, #one, #zero, #clear  {
+  float : left;
+  margin-left: 15px;
+}
+#mult, #minus, #plus {
+  float: right;
+  margin-right: 15px;;
+}
